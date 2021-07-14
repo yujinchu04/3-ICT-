@@ -1,0 +1,33 @@
+n=int(input())
+d=0
+count=0
+if n//10000!=0:
+    count+=n//10000
+    d=n%10000
+    n=d
+if n//5000!=0:
+    count+=n//5000
+    d=n%5000
+    n=d
+if n//1000!=0:
+    count+=n//1000
+    d=n%1000
+    n=d
+if n//500!=0:
+    count+=n//500
+    d=n%500
+    n=d
+if n//100!=0:
+    count+=n//100
+    d=n%100
+    n=d
+if n//50!=0:
+    count+=n//50
+    d=n%50
+    n=d
+if n//10!=0:
+    count+=n//10
+    d=n%10
+    n=d
+print(count)
+#36:10
